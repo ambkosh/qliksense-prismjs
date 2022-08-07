@@ -6,6 +6,16 @@ Basic language definition via prism.js. Follow [this](https://prismjs.com/extend
 The core language definition is in prism-qliksense.js. I took the list of keywords from [this](https://github.com/MattFryer/Qlik-Notepad-plus-plus) project by Matt Fryer
 with a much more in depth functionality for Notepad++
 
+It is likely not perfect but can be easily extended. I haven't figured out yet if it is possible to have a proper highlighting for variables after they are defined with LET / SET.
+
+## Usage
+
+Follow [the official guide from prism.js](https://prismjs.com/extending.html#creating-a-new-language-definition) and then use prism-qliksense.js in the projects components folder and exchange the components.json with the files in here.
+
+That way, you can choose your own themes and extensions later on.
+
+You can also used the prism.js and prism.css files that only containt the Qlik Sense language definition and standard theme.
+
 ## Definition
 
 I wanted to keep the entire definition with the [standard tokens of prism.js](https://prismjs.com/tokens.html#standard-tokens). I didn't want to have the headache that the definition wouldn't work with different themes.
